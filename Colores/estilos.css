@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 45px 0;
+    color: #fff;
+    
+    
+    background: hsl(60, 55%, 20%);
+    
+}
+
+
+.title{
+    text-align: center;
+}

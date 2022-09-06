@@ -1,0 +1,38 @@
+
+
+/* elemento a descendientes de la class contenedor */
+.contenedor a{
+    text-decoration: none;
+    color: firebrick;
+}
+
+/* este selector elige al hijo directo del elemento */
+.contenedor>a{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* + escoge al primero elemento que le sigue al elemento h2  que sean hermanos 
+del mismo elemento padre*/
+h2 + p{
+    color: gold;
+}
+
+/* elige todos los elementos P que siguen luego del elemento h3 y sean hermanos
+del mismo elemento padre */
+h3~p{
+    color: indigo;
+}
+
+section{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aqua;
+    background-color: brown;
+    border: 1px solid brown;
+    border-radius: 4px;
+    box-shadow:  -2px 2px 2px 0 black;
+    padding: 5px;
+}
+

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 1px;
+    height: 600px;
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header.title{
+    background-color: aqua;
+    height: fit-content;
+}
+.header .description{
+    background-color: blue;
+    height: fit-content;
+}
+
+

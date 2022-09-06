@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de imagenes</title>
+    <link rel="stylesheet" href="galeria.css">
+    <script
+        src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+        crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <script> 
+    
+        $(document).ready(function(){
+            $('img').click(function(){
+                $(this).fadeOut("slow");
+            });
+        });
+    
+        $(document).ready(function(){
+           $(".show").click(function(){
+            $("img").toggle("slow");
+           });
+        });
+    </script>
+    <section class="gallery">
+        <h2>Galeria de imagenes</h2>
+        <a href="#" class="show" style="display:block ;">Mostrar las imagenes</a>
+        <div class="container">
+            <div>                
+                <img src="img/image1.jpg" alt="">
+                <img src="img/image2.jpg" alt="">
+                <img src="img/image3.jpg" alt="">
+                <img src="img/image4.jpg" alt="">
+                <img src="img/image5.jpg" alt="">
+                <img src="img/image6.jpg" alt="">
+           </div>
+        </div>
+    </section>
+</body>
+</html>

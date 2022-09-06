@@ -1,0 +1,25 @@
+*{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    padding: 0.1px;
+    text-align: center;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #c23616;
+    background-image: linear-gradient(to top left, rgba(255, 0, 0, 0.39), rgba(220, 20, 60, 0.507)), url(img/hero.jpg);
+    
+    height: 500px;
+    
+}
+
+.title{
+    font-size: 50px;
+    margin-top: 100px;
+}

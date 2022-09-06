@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img{
+    display: block;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin: 30px auto 0;
+    box-shadow: 10px 10px 2px 0 steelblue, 20px 20px 2px 0 slateblue;
+}
