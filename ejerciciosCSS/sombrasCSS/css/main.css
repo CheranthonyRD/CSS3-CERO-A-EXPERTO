@@ -1,0 +1,37 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0.1px;
+}
+
+div:not(.container){
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    background-color: beige;
+    margin: 10px 20px 10px 50px;
+    line-height: 200px;
+    border-radius: 15px;
+    color: gray;  
+}
+
+.A{
+    box-shadow: -4px -4px gray;
+}
+
+.B{
+    box-shadow: -4px -4px 10px gray;
+}
+
+.C{
+    box-shadow: -14px -14px 0 5px gray;
+}
