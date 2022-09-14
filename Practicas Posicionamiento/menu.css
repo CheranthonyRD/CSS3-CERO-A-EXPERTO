@@ -1,58 +1,178 @@
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+   
 }
 
 body{
-   font-family: 'Arial';
+    background-color: steelblue;
 }
 
 .nav{
-    background: purple;
-    height: 70px;
-    padding: 0 50px;
-    text-align: right;
-    position: fixed;
-    top: 0;
+    position: fixed ;
     width: 100%;
+    height: 70px;
+    background-color: rgba(128, 0, 128, 0.801);
+    text-align: right;
+    /* box-shadow: 0 2px 3px rgba(128, 0, 128, 0.616); */
+    z-index: 1;
 }
 
 .enlaces{
+    display: inline-block;
     color: #fff;
     text-decoration: none;
     line-height: 70px;
     padding: 0 20px;
-    display: inline-block;
+    font-size: 20px;
 }
 
 .enlaces:hover{
-    background: #fff;
-    color: purple;
+    background-color: #fff;
+    color: purple;    
+    transition: 200ms;
+}
+
+/* .section{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    
+}
+
+.section:first-of-type{
+    position: relative;
+    color: white;
+    height: 100vh;   
+}
+
+section:nth-child(3){
+    color: white;
+    background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+
+}
+
+section:nth-child(4){
+    color: white;
+    background: linear-gradient(to right, #108dc7, #ef8e38)
+} */
+
+
+
+.title{
+    line-height: 100vh;
+    font-size: 3rem;
+}
+
+.wave{    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    background-color: steelblue;
+   
+    width: 100%;
+    
+}
+
+.wave2{
+    background-color: steelblue;
+   
+    width: 100%;    
+   
+    
 }
 
 .section{
-    height: 100vh;
-    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+    
 }
 
-.title{
-    font-size: 3rem;
-    color: #fff;
+
+.container{
+    position: relative;
+    width: 100%;
+   
+
+}
+
+.section1{
+    z-index: 0;
+    padding: .1px;
+    background-color: #00bbf9;
+}
+
+.section2{
+    z-index: 0;
+    background-color: #ffc300;
+}
+
+.honda{
+    width: 100%;
+    position: absolute;
+    bottom: 470px;
+    left: 0;
+    z-index: 0;
+}
+
+.card{
+    position: absolute;
+    /* margin: 0 auto; */
+    padding: .1px;
+    z-index: 10;
+    background-color: #e9ecef;
+    border-radius: 15px;
     text-align: center;
-    line-height: 100vh;
+    left: 400px;
+    bottom: 250px;    
+    width: 300px;
+    height: 520px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    
+    
 }
 
-.section:nth-of-type(1){
-    margin-top: 70px;
-    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+.card:hover{
+    transform: translateY(10px);
+    transition: 600ms;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
-.section:nth-of-type(2){
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+.card-img img{
+    display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    
 }
 
-.section:nth-of-type(3){
-    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+.card-text{
+    width: 100%;
+    padding: 5px 15px;
+}
+
+.card-title{
+    color: crimson;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.card-text>p{
+    width: 100%;
+    margin-top: 10px;
+    text-align: justify;
+    font-weight: bold;
+    letter-spacing: -0.8px;
+    line-height: 18px;
+}
+
+.card-text>p::first-letter{
+    font-size: 30px;
+    color: #d00000;
+    
 }

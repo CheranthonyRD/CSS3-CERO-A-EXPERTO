@@ -5,40 +5,108 @@
 }
 
 .container{
-    width: 502px;
-    height: 600px;
-    margin:20px  auto;
-    border: 1px solid #000;
+    width: 90%;    
+    border: 1px solid;
+    min-height: 600px;
+    margin: 30px auto 0;
     display: flex;
-    /* align-items: center; */
-    justify-content: space-between;
-    align-content:space-evenly;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+   
+    
+    
+    
+    /* justify-content Nos permite alinear
+    en el MAIN AXIS o del reparto del espacio disponible en el main axis */
+    
+    
+   
+
+    /* alinear elementos en el cross axis y debe haber espacio disponible */
+    
+    
+    
+    
 }
 
 .item{
-    flex: 1 0 100px;
+    width: 100px;
     height: 100px;
     text-align: center;
-    color: #fff;
-    font-size: 30px;
-    flex-shrink: 1;
+    line-height: 100px;
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+
 }
 
-
 .item1{
-    background: steelblue;
-    height: auto;
-    align-self: stretch;
+    
+    background-color: brown;
+    
 }
 
 .item2{
-    background: crimson;
+    
+  
+    background-color: crimson;
 }
 
 .item3{
-    background: darkcyan;
+   
+    background: steelblue;
 }
 
 .item4{
-    background: darkmagenta;
+    
+   
+    background-color: chocolate;
 }
+
+/* .navbar{
+    width: 100%;
+    padding: .1px;
+    display: block;
+    max-height: 100px ;
+    min-height: 100px;
+    position: relative;
+    top: 20px;
+    background-color: crimson;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+
+
+}
+
+.navbar__menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    /* background-color: bisque; */
+    /* width: 100%;
+    height: 50px;
+    margin: 0 auto;    
+    list-style: none;   
+} */
+
+/* .navbar__menu__item{
+    display: inline-block;   
+  
+    line-height: 100px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid crimson;
+    border-radius: 35px; 
+    padding: 0 10px;
+
+
+}
+
+.navbar__menu__item:hover{
+    cursor: pointer;
+    text-shadow: 2px 0 2px rgba(0,0,0,0.3);
+}  */
+

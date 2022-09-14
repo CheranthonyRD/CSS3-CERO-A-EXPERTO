@@ -4,66 +4,46 @@
     box-sizing:border-box;
 }
 
+:root{
+    --color-title:#1d3557;
+    --color-media: #ffb703;
+}
+
 .title{
-    font-size: 3rem;
-    background: none;
-    color: crimson;
-    border-bottom: none;
-    margin: 40px 0;
+    width: 80%;
+    margin: 50px auto 0 ;
     text-align: center;
-    font-family: monospace;
+    font-size: 50px;
+    color: var(--color-title);
+    text-decoration: underline;
 }
 
 
-@media screen and (min-width:700px){
-    body{
-        background: crimson;
-    }
-}
-
-
-
-/* 
-@media screen and (max-width:400px), (min-width:900px){
+/* este media querie funciona cuando queremos que se vea asi cuando vamos a imprirmir */
+/* @media print {
     .title{
-        background: #000;
-        color: #fff;
-    }
-} */
-
-
-/* 
-@media screen and (orientation:portrait) and (max-width:600px){
-    .title{
-        text-align: left;
-        background: steelblue;
-    }
-} */
-
-/* @media screen and (orientation:portrait){
-    .title{
-        margin: 0;
-        color: steelblue;
-        background: #000;
-        height: 100vh;
-    }
-}
- */
-
-/* @media <media-type> and (expression){
-    
-
-} */
-
-@media print{
-    
-
-    .title{
-        color: steelblue;
-        font-size: 5rem;
         text-align: right;
-        font-family: cursive;
+    }
+} */
+
+
+@media screen and (max-width: 600px){
+    .title{
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+        color: var(--color-media);
+        background-color: black;
     }
 }
 
+@media screen and (orientation:landscape){
+    .title{
+        background-color: #ffb703;
+        color: white;
+        text-decoration: line-through;
+        font-size: 20px;
+        text-align: center;
+    }
+}
 
