@@ -10,9 +10,9 @@
     min-height: 600px;
     margin: 30px auto 0;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+   flex-flow: row nowrap;
+   justify-content: center;
+   align-items: flex-start;
    
     
     
@@ -40,10 +40,11 @@
     font-weight: bold;
     font-family: sans-serif;
 
+
 }
 
 .item1{
-    
+    align-self: center;
     background-color: brown;
     
 }
