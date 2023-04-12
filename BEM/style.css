@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+
+:root{
+    --card__bgcolor: #001524e9;
+    --card__title: #fda93a;
+    --card__parrafo: #edf2f4;
+    --navbar__bg: #264653;
+}
+
+.header{
+    height: 400px;
+    width: 100%;
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: var(--navbar__bg);
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar__item{
+    line-height: 50px;
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 0 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.navbar__item--active{
+    background-color: #fff;
+    color: var(--navbar__bg);
+}
+
+.navbar__item:hover{
+    color: var(--navbar__bg);
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.header__background{
+ height: calc(100% - 70px);
+ background-image: url('../bg.jpg');
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+
+}
+
+.card{
+    /* margin: 150px auto 0; */
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+    padding: 18px 0;
+    background-color: var(--card__bgcolor);
+    
+}
+
+.card__figure{
+    width: 95%;
+    height: 48%;
+    position: relative;
+    left: 17px;
+    border-radius: 10px 0 0 10px;
+
+    
+}
+
+.card__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+
+}
+
+.card__info{
+    width: 90%;
+    height: 50%;
+    margin: 15px auto 0;
+
+}
+
+.card__title{
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+
+}
+
+.card__point{
+    color: var(--card__title);
+}
+
+.card__parrafo{
+    margin: 5px 0;
+    color: #ddd;
+    text-align: justify;
+    width: 85%;
+}
+
+.card__btn{
+    display: block;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: var(--card__title);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+    
+}
