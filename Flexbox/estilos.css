@@ -2,6 +2,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px red solid;
+    
 }
 
+:root{
+    --color__item1: #1d3557;
+    --color__item2: #ffd60a;
+    --color__item3: #e63946;
+    --color__item4: #7cb518;
+    --item__shadow: 3px 1px 14px rgba(0,0,0,0.6);
+}
+
+.container{
+    height: 700px;
+    width: 700px;
+    border: 1px solid;
+    margin: 10% auto;
+    display: flex;
+    
+   
+}
+
+.item{
+    width: 400px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    box-shadow: var(--item__shadow);
+    
+
+}
+
+.item1{
+    background-color: var(--color__item1);
+    color: #fff;
+}
+
+.item2{
+    background-color: var(--color__item2);
+    color: #fff;
+}
+
+.item3{
+    background-color: var(--color__item3);
+    color: #fff;
+}
+
+.item4{
+    background-color: var(--color__item4);
+    color: #fff;
+}
