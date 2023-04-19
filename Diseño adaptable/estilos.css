@@ -1,49 +1,83 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root{
-    --color-title:#1d3557;
-    --color-media: #ffb703;
+    --login__gradient: linear-gradient(to top, #fbc2eb8a 0%, #a6c0ee90 100% );
+    --form__btn:linear-gradient(to right, #ad5389, #3c1053); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    --card__shadow : 4px 4px 5px -3px rgba(0,0,0,0.75);
+
 }
 
-.title{
-    width: 80%;
-    margin: 50px auto 0 ;
+.login{
+    width: 100vw;
+    height: 100vh;
+    background-image: var(--login__gradient) , url('./assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 400px;
+    height: 520px;
+    background-color: #ffffff;
+    padding: 0 15px;
+    border-radius: 3px;
+    box-shadow: var(--card__shadow);
+}
+
+.card__title{
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    font-size: 50px;
-    color: var(--color-title);
-    text-decoration: underline;
+    margin-bottom: 35px;
+    padding-top: 15px;
 }
 
+.form{
+    width: 100%;
+}
 
-/* este media querie funciona cuando queremos que se vea asi cuando vamos a imprirmir */
-/* @media print {
-    .title{
-        text-align: right;
-    }
-} */
+.input{
+    width: 100%;
+    padding: 15px 0 15px 5px;
+    border: 1px solid rgb(218, 214, 214);
+    border-radius: 3px;
+    margin-bottom: 15px;
+    outline: none;
+    font-size: 0.9rem;
+}
 
+.form__mensaje{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 180px;
+    
+}
+
+.form__btn{
+    background-image: var(--form__btn);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* media queries */
 
 @media screen and (max-width: 600px){
-    .title{
-        text-decoration: none;
+    .login{
+        background-image: none;
+    }
+    .card{
         width: 100%;
-        text-align: center;
-        color: var(--color-media);
-        background-color: black;
+        padding: 0 35px;
+        box-shadow: none;
     }
 }
-
-@media screen and (orientation:landscape){
-    .title{
-        background-color: #ffb703;
-        color: white;
-        text-decoration: line-through;
-        font-size: 20px;
-        text-align: center;
-    }
-}
-
