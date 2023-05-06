@@ -4,8 +4,16 @@
 .grid__container{
     outline: 1px solid #aaa;
     max-width: 600px;
-    min-height: 700px;
+    min-height: 600px;
     margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "header header header header header"
+                         "sidebar sidebar main main main"
+                         "sidebar sidebar main main main"
+                         "footer footer footer footer footer";
+    
 
 }
 
@@ -14,20 +22,46 @@
     font-size: 2rem;
     font-family: sans-serif;
     color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header{
+    
+    grid-area: header;
     background-color:sienna;
 }
 
 .main{
+    grid-area: main;
     background-color: chocolate;
 }
 
 .sidebar{
+    grid-area: sidebar;
     background-color: brown;
 }
 
 .footer{
+    grid-area: footer;
     background-color: tomato;
+}
+
+@media screen and (max-width: 600px) {
+    .grid__container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "header"
+                             "sidebar"
+                             "main"
+                             "footer"
+        ;
+        
+    }
+
+    .footer{
+        height: 100px;
+        align-self: self-end;
+    }
 }
