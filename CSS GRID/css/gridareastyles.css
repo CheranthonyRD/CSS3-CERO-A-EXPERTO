@@ -1,0 +1,33 @@
+
+/* GRID AREAS */
+
+.grid__container{
+    outline: 1px solid #aaa;
+    max-width: 600px;
+    min-height: 700px;
+    margin: 100px auto;
+
+}
+
+.item__grid{
+    text-align: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: #FFF;
+}
+
+.header{
+    background-color:sienna;
+}
+
+.main{
+    background-color: chocolate;
+}
+
+.sidebar{
+    background-color: brown;
+}
+
+.footer{
+    background-color: tomato;
+}

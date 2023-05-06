@@ -5,7 +5,7 @@
     
 }
 
-:root{
+/* :root{
     --color__item1: #1d3557;
     --color__item2: #ffd60a;
     --color__item3: #e63946;
@@ -51,4 +51,11 @@
 .item4{
     background-color: var(--color__item4);
     color: #fff;
+} */
+
+body{
+    background-color:crimson;
+    
 }
+
+

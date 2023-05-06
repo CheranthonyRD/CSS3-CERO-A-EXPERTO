@@ -12,63 +12,69 @@ body{
 }
 
 .card{
-    width: 100%;
-    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #fff 50%, #2d3250 50%);
     display: flex;
+    justify-content: center;
+    gap: 150px;
     align-items: center;
-    justify-content: space-evenly;
-    z-index: -999;
-    background-image: linear-gradient(360deg, var(--color-price) 50%, var(--color-boton) 50%);
-
 }
 
 .card__item{
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+    height: 500px;
     max-width: 350px;
     width: 30%;
-    min-height: 450px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    padding: 40px 0;
-    text-align: center;
-    overflow: hidden;
+    border-radius: 8px;
+    padding: 20px 10px;
     background-color: #fff;
-    border-radius: 20px;
 }
 
-.card__item--active{
-    background-color: #5175ff;
-    --color-price: #fff;
-    --color-features: #fff;
-}
 .card__plan{
-    color: var(--color-price);
-    margin-bottom: 2em;
+    text-align: center;
 }
+
 .card__price{
-    font-size: 3rem;
-    color: var(--color-price);
-    margin-bottom: 2em;
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0;
 }
 
 .card__features{
-    color: var(--color-features);
-    margin-bottom: 10px;
+    text-align: center;
+    margin: 25px 0;
+    color: #797373;
 }
 
 .card__features--margin{
-    margin-bottom: 15px;
+    margin: 50px 0;
 }
 
 .card__cta{
-    margin-top: 2em;
-    color: #fff;
+    display: block;
+    background-color: #26293A;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 50px  auto 0;
     text-decoration: none;
-    display: inline-block;
-    padding: 15px 30px;
-    border-radius: 15px;
-    background-color: var(--color-price);
+    font-size: 20px;
+    border-radius: 2rem;
+    color: #fff;
+}
+
+.card__item--active{
+    background-color: steelblue;
+    color: #fff;
+}
+
+.card__item--active .card__features{
+    color: #fff;
 }
 
 .card__cta--active{
-    background: #fff;
-    color: #26293A;
+    background-color: #fff;
+    color: var(--color-price);
 }
