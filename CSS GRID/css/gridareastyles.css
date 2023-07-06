@@ -3,15 +3,14 @@
 
 .grid__container{
     outline: 1px solid #aaa;
-    max-width: 600px;
-    min-height: 600px;
-    margin: 100px auto;
+    min-width: 100vw;
+    min-height: 100vh ;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    row-gap: 5px;
+    grid-template-rows: 100px auto 100px;
     grid-template-areas: "header header header header header"
-                         "sidebar sidebar main main main"
-                         "sidebar sidebar main main main"
+                         "sidebar main main main main" 
                          "footer footer footer footer footer";
     
 
@@ -27,8 +26,7 @@
     align-items: center;
 }
 
-.header{
-    
+.header{    
     grid-area: header;
     background-color:sienna;
 }
